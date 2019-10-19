@@ -2,8 +2,8 @@
 
 int val = 1;
 int val2 = 2;
-int* valPtr = &val;
-int& valRef = val;
+int* valPtr = &val2;
+int& valRef = val2;
 
 void printVals()
 {
