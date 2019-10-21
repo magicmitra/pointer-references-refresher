@@ -21,7 +21,7 @@ int main()
 
 	// reassign pointer and reference (2nd assignment)
 	valPtr = &val2;
-	valRef = val2;
+	*valPtr = 3;
 
 	printVals();
 
