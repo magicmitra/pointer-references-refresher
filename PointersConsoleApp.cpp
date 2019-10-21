@@ -12,21 +12,18 @@ void printVals()
 	std::cout << "val: " << val << "\nval2: " << val2 << "\nvalPtr: " << *valPtr << "\nvalRef: " << valRef << std::endl;
 	std::cout << "Addresses:" << std::endl;
 	std::cout << "val: " << &val << "\nval2: " << &val2 << "\nvalPtr: " << valPtr << "\nvalRef: " << &valRef << std::endl;
-
-	// reassign pointer and reference (2nd assignment)
-	valPtr = &val2;
-	valRef = val2;
-
-	// display values on 2nd assignment
 	std::cout << std::endl;
-	std::cout << "Values:" << std::endl;
-	std::cout << "val: " << val << "\nval2: " << val2 << "\nvalPtr: " << *valPtr << "\nvalRef: " << valRef << std::endl;
-	std::cout << "Addresses:" << std::endl;
-	std::cout << "val: " << &val << "\nval2: " << &val2 << "\nvalPtr: " << valPtr << "\nvalRef: " << &valRef << std::endl;
 }
 
 int main()
 {
 	printVals();
+
+	// reassign pointer and reference (2nd assignment)
+	valPtr = &val2;
+	valRef = val2;
+
+	printVals();
+
 	return 0;
 }
