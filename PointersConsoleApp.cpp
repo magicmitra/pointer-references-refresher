@@ -7,6 +7,7 @@ int& valRef = val;
 
 void printVals()
 {
+	// display 1st assignment
 	std::cout << "Values:" << std::endl;
 	std::cout << "val: " << val << "\nval2: " << val2 << "\nvalPtr: " << *valPtr << "\nvalRef: " << valRef << std::endl;
 	std::cout << "Addresses:" << std::endl;
